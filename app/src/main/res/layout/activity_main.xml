@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:background="#F4DDF8"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTxtSearch"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_margin="25dp"
+        android:hint="ABBREVIATION (in CAPS)"
+        android:textColorHint="#686868"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:shadowColor="#FFFFFF"
+        android:text="MEANS"
+        android:textColor="#F6F6F6"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#D39898"
+        android:textColorLink="#FFFFFF"
+        android:textSize="20sp"
+        app:backgroundTint="#835ACC"
+        app:rippleColor="#F1EEEE" />
+
+    <TextView
+        android:id="@+id/txtViewResults"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_margin="20dp"
+        android:fontFamily="serif"
+        android:textColor="#080015"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="290dp"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-7826106898129019/1988486479"></com.google.android.gms.ads.AdView>
+
+</LinearLayout>
